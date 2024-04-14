@@ -40,6 +40,7 @@ function createBody() {
         // Adding result to the row
         let result = document.createElement("td");
         result.innerText = results[i];
+        result.setAttribute("class", "table-Active");
         row.appendChild(result);
     
         //Adding guesses to the row
