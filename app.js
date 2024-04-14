@@ -46,6 +46,15 @@ function createBody() {
         for (let j = 0; j < nPlayers; j++) {
             let cell = document.createElement("td");
             cell.innerText = guesses[j][i];
+            if(guesses[j][i] === "V") {
+                cell.setAttribute("class", "table-success");
+            }
+            if(guesses[j][i] === "E") {
+                cell.setAttribute("class", "table-warning");
+            }
+            if(guesses[j][i] === "D") {
+                cell.setAttribute("class", "table-danger");
+            }
             row.appendChild(cell);
         }
     

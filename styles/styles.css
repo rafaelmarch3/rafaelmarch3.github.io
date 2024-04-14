@@ -6,3 +6,10 @@
 .nav-item>a:hover {
   color: darkred;
 }
+
+.victory {
+    background-color: green;
+}
+.defeat {
+    color: red;
+}
