@@ -42,7 +42,7 @@ guesses = [["V", "E", "E", "V", "D", "E", "D", "E", "V", "E", "E", "V", "V", "V"
 
 
 // Counting player points
-let playersPoints = ["0", "0", "0", "0", "0", "0", "0", "0", "0", "0"];
+let playersPoints = ["0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0"];
 for(let i = 0; i < nPlayers; i++) {
     for(let j = 0; j < nMatches; j++) {
         if(guesses[i][j] === "V") {
