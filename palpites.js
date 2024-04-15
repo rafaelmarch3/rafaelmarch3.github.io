@@ -57,8 +57,14 @@ for(let i = 0; i < nPlayers; i++) {
 console.log(playersPoints);
 
 // Match results: update during the championship
-results = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""];
+results = ["V", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""];
 
 // Actual points: update during the championship
 actualPoints = "0";
-
+for(let j = 0; j < nMatches; j++) {
+    if(results[j] === "V") {
+        actualPoints = (parseInt(actualPoints) + 3).toString();
+    } else if(results[j] === "E") {
+        actualPoints = (parseInt(actualPoints) + 1).toString();
+    }
+}
